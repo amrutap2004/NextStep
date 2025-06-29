@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#3b82f6" />
+    <meta
+      name="description"
+      content="CareerPath AI - Your AI-powered career companion for personalized learning paths and mentorship. Get smart career roadmaps, connect with mentors, and accelerate your professional growth."
+    />
+    <meta name="keywords" content="career development, AI mentor, learning paths, skill development, mentorship, career roadmap, professional growth" />
+    <meta name="author" content="CareerPath AI Team" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://careerpath-ai.com/" />
+    <meta property="og:title" content="CareerPath AI - Smart Career Roadmap & Mentorship Platform" />
+    <meta property="og:description" content="Your AI-powered career companion for personalized learning paths and mentorship. Get smart career roadmaps, connect with mentors, and accelerate your professional growth." />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://careerpath-ai.com/" />
+    <meta property="twitter:title" content="CareerPath AI - Smart Career Roadmap & Mentorship Platform" />
+    <meta property="twitter:description" content="Your AI-powered career companion for personalized learning paths and mentorship. Get smart career roadmaps, connect with mentors, and accelerate your professional growth." />
+    <meta property="twitter:image" content="%PUBLIC_URL%/og-image.png" />
+
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
+    <title>CareerPath AI - Smart Career Roadmap & Mentorship Platform</title>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "CareerPath AI",
+      "description": "Your AI-powered career companion for personalized learning paths and mentorship",
+      "url": "https://careerpath-ai.com",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "CareerPath AI Team"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+    <!-- Loading spinner for initial load -->
+    <div id="loading-spinner" class="fixed inset-0 bg-white dark:bg-gray-900 flex items-center justify-center z-50">
+      <div class="animate-spin rounded-full h-32 w-32 border-b-2 border-primary-500"></div>
+    </div>
+    
+    <script>
+      // Hide loading spinner when app loads
+      window.addEventListener('load', function() {
+        const spinner = document.getElementById('loading-spinner');
+        if (spinner) {
+          spinner.style.display = 'none';
+        }
+      });
+    </script>
+  </body>
+</html> 
